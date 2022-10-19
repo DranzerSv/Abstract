@@ -1,0 +1,73 @@
+.header{
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.header__top-bar{
+    
+    width: 250px;
+    display: flex;
+    margin-left: 5%;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    
+ 
+
+}
+.header__top-bar__logo{
+    width: 30px;
+}
+.header__top-bar__brand{
+    color: #fff;
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight: 600;
+}
+.header__top-bar__line{
+    width: 2px;
+    height: 40px;
+    background-color: #fff;
+}
+.header__top-bar__help{
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+.nav{
+
+
+    
+    width: 80px;
+    height: 50px;
+    margin-left: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+
+
+}
+.nav__find{
+   
+    width: 25px;
+    
+}
+.nav__menu-icon{
+    margin-left: 5px;
+    width: 25px;
+
+}
+.main_search-section{
+    width: 100vw;
+    height: 40vw;
+    background-color:#dadbf1;
+
+}
