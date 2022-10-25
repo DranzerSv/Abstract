@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     
 }
 .header__top-bar{
@@ -56,6 +57,7 @@
     height: 47px;
     outline: none;
     width: 70vw;
+    border: none;
     
 }
 @media(min-width:768px){
@@ -121,7 +123,30 @@
 }
 .header__nav-desktop{
     display: flex;
-}    
+    margin-right: 8%;
+}
+.header__nav-desktop__button1{
+    background-color: #000000;
+    color: #fff;
+    height: 5vh;
+    width: 22vh;
+    border-color: #fff;
+    font-family: sans-serif;
+    border-radius: 7px;
+    font-size: 19px;
+}
+.header__nav-desktop__button2{
+    background-color: #4C5FD5;
+    border-color: #4C5FD5;
+    color: #fff;
+    margin-left: 6%;
+    width: 15vh;
+    height: 5vh;
+    font-family: sans-serif;
+    border-radius: 7px;
+    font-size: 19px;
+
+}        
 }
 /*------------------------Estilos de la barra de búsqueda-----------------------------------*/
 .main{
@@ -181,7 +206,8 @@
 @media (min-width:1024px){
 .main__container{
     width: 50vw;
-}    
+}
+ 
 }
 /* ----------------------Estilos de las caracteristicas----------------------------------------------*/
 .specs{
