@@ -1,3 +1,6 @@
+*{
+    list-style: none;
+}
 /*-------------------------Estilos del header-------------------------------------------*/
 .header{
     background-color: #000000;
@@ -39,13 +42,51 @@
     font-family: sans-serif;
 
 }
+/*--------------------Estilos del la barra del header-----*/
+.header__search-bar{
+    display: none;/*poner en none*/
+    height: 80px;
+    background-color: white;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+}
+.header__input{
+    height: 47px;
+    outline: none;
+    width: 70vw;
+    
+}
 @media(min-width:768px){
     .header{
         height: 10vh;
     }
 }
+.sub-menu{
+    background-color: #373433;
+    width: 100vw;
+    height: 27vh;
+    display: none;
+    flex-direction: column;
+    justify-content:space-evenly ;
+    align-items: center;
+    position: absolute;
+    
+
+}
+.sub-menu__option{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #fff;
+}
+.line{
+    height: 2px;
+    width: 46vw;
+    background-color: #fff;
+}
 /*----------------------Estilos de navegación-------------------------------------------*/
-.nav{
+.header__nav{
 
 
     
@@ -70,6 +111,17 @@
     margin-left: 5px;
     width: 25px;
 
+}
+.header__nav-desktop{
+    display: none;
+}
+@media (min-width:1024px){
+.header__nav{
+    display: none;
+}
+.header__nav-desktop{
+    display: flex;
+}    
 }
 /*------------------------Estilos de la barra de búsqueda-----------------------------------*/
 .main{
@@ -125,6 +177,11 @@
         letter-spacing: 0px;
         font-size: 50px;
     }
+}
+@media (min-width:1024px){
+.main__container{
+    width: 50vw;
+}    
 }
 /* ----------------------Estilos de las caracteristicas----------------------------------------------*/
 .specs{
@@ -190,3 +247,66 @@ margin-left: 5%;
     margin-left: 0%;
    } 
 }
+@media(min-width:1024px){
+.specs{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:40px;
+}
+.specs__container{
+   
+    width: 40vw;
+    
+}
+.specs__text{
+   
+    margin-left:12% ;
+}
+}
+/*-----------------------estilos del footer--------------------------------*/
+h4{
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #000000;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+.footer__grid{
+    display: grid;
+    align-items:baseline;
+    grid-template-columns: 43% 43%;
+    
+
+}
+@media (min-width:768px) {
+.footer__grid{
+    width: 50vh;
+   
+}
+
+.footer__legalities{
+    margin-top:400px;
+}
+}
+@media(min-width:1024px){
+.footer__grid{
+    grid-template-columns: auto auto auto auto;
+}    
+    
+}
+.menu_active{
+    display: none;
+}
+.searchbar_active{
+    display: flex;
+}
+.sub-menu__active{
+    display: flex;
+}
+

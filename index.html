@@ -10,24 +10,39 @@
     
 </head>
 <body>
-    <header class="header">
-        <div class="header__top-bar">
+
+
+    <header  class="header">
+        <div id="header__search-bar" class="header__search-bar">
+            <input class="header__input" type="text" value="Search">
+            <img id="header__close" class="header__close" src="img/close.png" alt="closing button" width="24px" height="24px">
+        </div>
+        <div id="header__top-bar" class="header__top-bar">
             <img  class="header__top-bar__logo" src="/img/logo-bosque.png" alt="logo-bosque">
             <span class="header__top-bar__brand">Abstract</span>
             <div class="header__top-bar__line"></div>
             <span class="header__top-bar__help">Help Center</span>
 
-            
 
         </div>
 
-        <nav  class="nav">
+        <nav  class="header__nav" id="header__nav">
             <img id="find-icon" class="nav__find" src="/img/find.png" alt="find icon">
             <img id="menu-icon" class="nav__menu-icon" src="/img/menu-burger.png" alt="menu icon">
+            
+        </nav>
+        <nav class="header__nav-desktop">
+            <button>Submit request</button>
+            <button>Sign in</button>
 
         </nav>
 
     </header>
+    <div id="sub-menu" class="sub-menu">
+        <span class="sub-menu__option">Submit a request</span>
+        <div class="line"> </div>
+        <span class="sub-menu__option">Sign in</span>
+    </div>
     <main class="main">
         <section class="main__search-section">
             <h1 class="main__title">How we can help?</h1>
@@ -157,5 +172,57 @@
 
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__grid">
+            <ul>
+                <h4>Abstract</h4>
+                <li>Start</li>
+                <li>Trial</li>
+                <li>Pricing</li>
+                <li>Download</li>
+            </ul>
+            <ul>
+                <h4>Resources</h4>
+                <li>Blog</li>
+                <li>Help</li>
+                <li>Center</li>
+                <li>Release</li>
+                <li>Notes</li>
+                <li>Status</li>
+            </ul>
+            <ul>
+                <h4>Community</h4>
+                <li>Twitter</li>
+                <li>LinkedIn</li>
+                <li>Facebook</li>
+                <li>Dribble</li>
+                <li>Podcast</li>
+            </ul>
+            <div>
+                <ul>
+                    <h4>Company</h4>
+                    <li>About</li>
+                    <li>Us</li>
+                    <li>Careers</li>
+                    <li>Legal</li>
+                </ul>
+                <ul>
+                    <span>Contact Us</span>
+                    <li>info@abstract.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__legalities">
+
+            <ul>
+                <img  class="header__top-bar__logo" src="/img/logo-bosque.png" alt="logo-bosque">
+                <li>Copyright 2022</li>
+                <li>Abstract Studio Desing, Inc</li>
+                <li>All rights reserved</li>
+            </ul>
+        </div>
+
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
